@@ -5,8 +5,10 @@ la línea m del fichero. Si el fichero no existe debe mostrar un mensaje por
 pantalla informando de ello.
 """
 import os
+import datetime
 
 while True:
+    inicio = datetime.datetime.now()
     a=True
     while a==True:
         n = input("introduce numero de tabla: ")
@@ -23,3 +25,5 @@ while True:
     print("\n"+fyle.readlines()[int(m)])
 
     fyle.close()
+    final = datetime.datetime.now()
+    print("El tiempo de ejecucion:", (final-inicio))

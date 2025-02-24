@@ -5,6 +5,8 @@ que contiene.
 http://textfiles.com/adventure/aencounter.txt 
 """
 import urllib.request
+import datetime
+
 
 
 def read_url(url):
@@ -46,3 +48,4 @@ def palabras_linea(linea):
 
 url = "http://textfiles.com/adventure/aencounter.txt"
 read_url(url)
+

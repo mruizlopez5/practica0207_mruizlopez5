@@ -7,6 +7,7 @@ un mensaje por pantalla informando de ello.
 import os
 
 while True:
+    inicio = datetime.datetime.now()
     numero = input("Introduce un numero: ")
     if os.path.exists("tabla-"+numero+".txt"):
 
@@ -15,3 +16,6 @@ while True:
         artxibo.close()
     else:
         print("no existe")
+
+    final = datetime.datetime.now()
+    print("el tiempo de ejecucuion es:",(final-inicio))
